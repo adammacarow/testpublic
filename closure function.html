@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function buatPenambah(angka) {
+    return function(nilai) {
+        return angka + nilai;
+    };
+}
+
+// Membuat fungsi penambah dengan angka tertentu
+const tambahLima = buatPenambah(10);
+const tambahTiga = buatPenambah(5);
+
+// Menggunakan fungsi closure
+console.log(tambahLima(10)); // Output: 15 (5 + 10)
+console.log(tambahTiga(7));  // Output: 10 (3 + 7)
+    </script>
+</body>
+</html>
