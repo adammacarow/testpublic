@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>masakah perulangan var and let</title>
 </head>
+
 <body>
     <script>
-        let = 20;
-        for(let i = 0; i < 10; j++) {
-            
+        //global scope
+        let i = 20;
+        for (let i = 0; i < 10; i++) {
+            // local scope
+            console.info(`Local ${i}`);
         }
-           </script>
+        console.info(`Global ${i}`);
+    </script>
 </body>
+
 </html>
